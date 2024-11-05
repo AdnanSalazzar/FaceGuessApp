@@ -72,11 +72,11 @@ def upload_image():
         
         file_path = os.path.join(app.config['UPLOAD_FOLDER'], image.filename)
         image.save(file_path)
-
+ 
          # Perform face detection
         result, face_data = detect_face(file_path)
 
         return render_template('index.html', result=result , face_data = face_data)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False, host='0.0.0.0')
