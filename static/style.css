@@ -1,0 +1,100 @@
+
+body {
+
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin: 0;
+    height: 100vh;
+   
+    
+    background: linear-gradient(45deg, #ff4e50, #5e3afc, #23f931, #74edd5);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+  }
+  
+  /* Define the animation */
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  h3, h2 , h1, p {
+    text-align: center;
+}
+
+h2{
+    font-size: 50px;
+}
+
+
+.box__dragndrop,
+.box__uploading,
+.box__success,
+.box__error {
+  display: none;
+}
+
+
+/* Basic box styling */
+
+
+.box {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: auto;
+    background-color: #f9f9f9;
+  }
+  
+  /* Style the input */
+  .box__file {
+    display: none; /* Hide the default file input */
+  }
+  
+  .box__input label {
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .box__dragndrop {
+    color: #888;
+  }
+  
+  /* Styling for button */
+  .box__button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    border: none;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Feedback messages */
+  .box__uploading,
+  .box__success,
+  .box__error {
+    display: none;
+    font-size: 0.9em;
+    margin-top: 10px;
+  }
+  
+  /* Drag-and-drop hover effect */
+  .box.box--dragging {
+    background-color: #e1f5fe;
+    border-color: #007bff;
+  }
+
+  .ans{
+    font-size: 70px;
+  }
