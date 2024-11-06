@@ -79,4 +79,4 @@ def upload_image():
         return render_template('index.html', result=result , face_data = face_data)
 
 if __name__ == "__main__":
-    app.run(debug=False, host='0.0.0.0')
+    app.run(debug=True)
